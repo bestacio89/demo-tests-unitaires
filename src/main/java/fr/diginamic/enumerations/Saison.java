@@ -32,18 +32,15 @@ public enum Saison {
 	 * @param libelle libellé
 	 * @return {@link Saison}
 	 */
-	public static Saison valueOfLibelle(String libelle) {
-		Saison[] saisons = Saison.values();
-		for (Saison saison : saisons) {
-			if (libelle.equals(saison.getLibelle())) {
-				return saison;
-			}
-			else {
-				return null;
-			}
-		}
-		return null;
-	}
+public static Saison valueOfLibelle(String libelle) {
+    Saison[] saisons = Saison.values();
+    for (Saison saison : saisons) {
+        if (libelle.equals(saison.getLibelle())) {
+            return saison;
+        }
+    }
+    return null;
+}
 
 	@Override
 	public String toString() {

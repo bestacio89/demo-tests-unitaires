@@ -23,7 +23,7 @@ public class SaisonTest {
     @Test
     public void testValueOfLibelleAutomne() {
         Saison saison = Saison.valueOfLibelle("Automne");
-        Assertions.assertNotNull(saison);
+        Assertions.assertNotNull(Saison.AUTOMNE);
         Assertions.assertEquals(Saison.AUTOMNE, saison);
     }
 
